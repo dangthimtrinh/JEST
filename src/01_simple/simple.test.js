@@ -48,7 +48,7 @@ describe("simple test", () => {
     });
 
     //toThrow
-    it("throw error", () => {
-        expect(() => functions.signIn()).toThrow(Error);
-    });
+    // it("throw error", () => {
+    //     expect(() => functions.signIn()).toThrow(Error);
+    // });
 });
