@@ -3,7 +3,7 @@ const functions = require("./simple");
 describe("simple test", () => {
 
     //toBe, toBeGreaterThan, toBeLessThan, toBeGreaterThanOrEqual, toBeLessThanOrEqual
-    it("shoud add 2 + 2 equal 4", () => {
+    it("shoud 2 + 2 equal 4", () => {
         const result = functions.sum(2, 2);
         expect(result).toBe(4);
         expect(result).toBeGreaterThan(3);
@@ -48,7 +48,7 @@ describe("simple test", () => {
     });
 
     //toThrow
-    // it("throw error", () => {
-    //     expect(() => functions.signIn()).toThrow(Error);
-    // });
+    it("throw error", () => {
+        expect(() => functions.signIn()).toThrow(Error);
+    });
 });

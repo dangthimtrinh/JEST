@@ -8,10 +8,10 @@ describe("async test", () => {
         featchData(1).then((result) => {
             expect(result.id).toBe(1);
         });        
-    });
+    }); 
+});
 
-    it("should return correct id using async-await", async () => {
-        const result = await featchData(1);
-        expect(result.id).toBe(1);        
-    })
-})
+it("should return correct id using async-await", async () => {
+    const result = await featchData(1);
+    expect(result.id).toBe(1);        
+});
